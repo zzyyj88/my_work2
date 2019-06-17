@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0ECE3"
+    android:gravity="center"
+    tools:context="com.example.honey.mywork.Classification">
+
+    <fragment
+        android:id="@+id/fragment_ability"
+        android:name="com.example.honey.mywork.Fragment.AbilityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_personality"
+        android:name="com.example.honey.mywork.Fragment.CharacterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_attitude"
+        android:name="com.example.honey.mywork.Fragment.EmotionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/ability"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="能力" />
+
+        <RadioButton
+            android:id="@+id/emotion"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="情感" />
+
+        <RadioButton
+            android:id="@+id/character"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="性格" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
